@@ -1,9 +1,10 @@
-import { useState } from "react"
-
+import { useState} from 'react'
 export function InputFeild({udtInputData,symbol}){
     const[val,newVal]=useState(0);
     function udtInputVal(event){
         const updatedValue = event.target.value;
+        
+        
     newVal(updatedValue);
         udtInputData(updatedValue,symbol);
     }
